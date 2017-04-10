@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d --name bowling-front -v $(pwd):/usr/src/app -p 8080:8080 bowling-front
