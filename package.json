@@ -23,9 +23,11 @@
     "@types/react": "^15.0.2",
     "@types/react-dom": "^0.14.21",
     "@types/react-tap-event-plugin": "0.0.30",
+    "@types/underscore": "^1.8.0",
     "material-ui": "^0.17.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "underscore": "^1.8.3"
   }
 }
