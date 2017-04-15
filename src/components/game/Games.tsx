@@ -16,8 +16,8 @@ export class Games extends React.Component<undefined, GamesState> {
         super();
         let games: Array<Game> = [];
         this.state = {games: []};
-        fetch('http://localhost:8080/src/json/games.json')
-            .then((response) => {
+        fetch('/src/json/games.json')
+            .then((response: Response) => {
                 return response.json();
             })
             .then((gamesJson: any) => {
@@ -34,10 +34,8 @@ export class Games extends React.Component<undefined, GamesState> {
                 {
                     _.map(this.state.games, (game) => {
                         return (
-                            <div>
-                                <GameDetails key={game.id}
-                                             game={game}/>
-                            </div>
+                            <GameDetails key={game.id}
+                                         game={game}/>
                         );
                     })
                 }
