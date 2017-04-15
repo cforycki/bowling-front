@@ -1,10 +1,10 @@
 export class Frame {
     private _id: number;
     private _number: number;
-    private _throws: Array<any>;
+    private _throws: Array<number>;
     private _total: number;
 
-    constructor({id, number, throws, total}: { id?: number, number?: number, throws?: Array<any>, total?: number }) {
+    constructor({id, number, throws, total}: { id?: number, number?: number, throws?: Array<number>, total?: number }) {
         this._id = id;
         this._number = number;
         this._throws = throws || [];
@@ -28,11 +28,11 @@ export class Frame {
         this._number = value;
     }
 
-    get throws(): Array<any> {
+    get throws(): Array<number> {
         return this._throws;
     }
 
-    set throws(value: Array<any>) {
+    set throws(value: Array<number>) {
         this._throws = value;
     }
 
