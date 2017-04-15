@@ -13,8 +13,6 @@ export class GameDetails extends React.Component<GameDetailsProps, undefined> {
 
     constructor() {
         super();
-        // this.frames = [];
-        // _.times(10, (i: number) => this.frames.push(Object.assign(new Frame({}), {number: i + 1})));
     }
 
     render() {
