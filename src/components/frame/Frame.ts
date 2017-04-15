@@ -4,7 +4,7 @@ export class Frame {
     private _throws: Array<any>;
     private _total: number;
 
-    constructor(id?: number, number?: number, throws?: Array<any>, total?: number) {
+    constructor({id, number, throws, total}: { id?: number, number?: number, throws?: Array<any>, total?: number }) {
         this._id = id;
         this._number = number;
         this._throws = throws || [];

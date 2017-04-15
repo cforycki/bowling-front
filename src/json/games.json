@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "frames": [
+      {
+        "number": 1,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 2,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 3,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 4,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 5,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 6,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 7,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 8,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 9,
+        "throws": [
+          "0",
+          "9"
+        ]
+      },
+      {
+        "number": 10,
+        "throws": [
+          "0",
+          "9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "frames": [
+      {
+        "number": 1,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 2,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 3,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 4,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 5,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 6,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 7,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 8,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 9,
+        "throws": [
+          "0",
+          "7"
+        ]
+      },
+      {
+        "number": 10,
+        "throws": [
+          "0",
+          "7"
+        ]
+      }
+    ]
+  }
+]
