@@ -16,7 +16,7 @@ export class Games extends React.Component<undefined, GamesState> {
         super();
         let games: Array<Game> = [];
         this.state = {games: []};
-        fetch('/src/json/games.json')
+        fetch('http://localhost:3000/api/games')
             .then((response: Response) => {
                 return response.json();
             })

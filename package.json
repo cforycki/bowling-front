@@ -26,6 +26,7 @@
     "@types/react-router-dom": "^4.0.3",
     "@types/react-tap-event-plugin": "0.0.30",
     "@types/underscore": "^1.8.0",
+    "flexboxgrid": "^6.3.1",
     "material-ui": "^0.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
