@@ -6,8 +6,11 @@ body {
     display: flex;
 }
 
-.frame:not(:first-of-type) {
-    border-left: none;
+.frame, .throw, .number {
+    box-shadow: 2px 0 0 0 #333333,
+    0 2px 0 0 #333333,
+    2px 2px 0 0 #333333, /* Just to fix the corner */ 2px 0 0 0 #333333 inset,
+    0 2px 0 0 #333333 inset;
 }
 
 .frame {
@@ -15,14 +18,12 @@ body {
     width: 61px;
     min-width: 61px;
     flex-wrap: wrap;
-    border: 1px solid black;
     justify-content: flex-end;
     font-family: "Lucida Console", Monaco, monospace
 }
 
 .number {
     flex-basis: 100%;
-    border-bottom: 1px solid black;
 }
 
 .throw {
@@ -30,15 +31,7 @@ body {
     height: 20px;
 }
 
-.throw,
-.frame:nth-of-type(10) .throw ~ .throw {
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-}
-
 .frame:nth-of-type(10) .throw {
-    border-bottom: 1px solid black;
-    border-left: none;
     flex-grow: 1;
 }
 
@@ -56,4 +49,34 @@ body {
 .throw:not(:empty),
 .total {
     text-align: center;
+}
+
+.floating-action {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+}
+
+.logo .bowl {
+    animation: roll 2s linear infinite;
+}
+
+@keyframes roll {
+    from {
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform-origin: center;
+        transform: rotate(360deg)
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .floating-action {
+        right: 16px;
+        bottom: 16px;
+    }
+
 }
