@@ -14,14 +14,17 @@ export class Games extends React.Component<undefined, GamesState> {
 
     constructor() {
         super();
-        let games: Array<Game> = [];
         this.state = {games: []};
+    }
+
+    componentDidMount() {
+        let games: Array<Game> = [];
         fetch('http://localhost:3000/api/games')
             .then((response: Response) => {
                 return response.json();
             })
             .then((gamesJson: any) => {
-                _.each(gamesJson, (game) => {
+                _.each(gamesJson, (game: Game) => {
                     games.push(new Game(game));
                 });
             })
