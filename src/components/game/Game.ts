@@ -1,29 +1,14 @@
 import {Frame} from '../frame/Frame';
-/**
- * Created by christophe on 15/04/17.
- */
+
 export class Game {
-    private _id: number;
-    private _frames: Array<Frame>;
+    public id: number;
+    public frames: Array<Frame>;
 
-    constructor({id, frames}: { id?: number, frames?: Array<Frame> }) {
-        this._id = id;
-        this._frames = frames;
+    constructor();
+    constructor({id, frames}: { id?: number, frames: Array<Frame> });
+    constructor(param?: { id: number, frames: Array<Frame> } | undefined) {
+        this.id = param && param.id || null;
+        this.frames = param && param.frames || [];
     }
 
-    get id(): number {
-        return this._id;
-    }
-
-    set id(value: number) {
-        this._id = value;
-    }
-
-    get frames(): Array<Frame> {
-        return this._frames;
-    }
-
-    set frames(value: Array<Frame>) {
-        this._frames = value;
-    }
 }
